@@ -46,3 +46,12 @@ L'agent s'exécute localement avec Ollama. Pour le tester sans appel réseau :
 ```bash
 pytest
 ```
+
+## Exemple de réponse
+
+Format indicatif; les titres et liens dépendent du flux RSS configuré :
+
+```text
+Dernières vidéos :
+- [Titre de la vidéo] — [date] — [URL publique]
+```
