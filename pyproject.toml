@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-track"
+version = "0.1.0"
+description = "Local multi-tool agent with a supervisor and a music specialist"
+requires-python = ">=3.10"
+dependencies = [
+    "feedparser>=6.0",
+    "langchain>=1.0",
+    "langchain-ollama>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+py-modules = ["agent", "config", "main", "tools"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_tools.py"]
